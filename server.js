@@ -6,9 +6,9 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-const mongoURI = process.env.MONGODB_URI;
+
 // MongoDB connection
-mongoose.connect(mongoURI, {
+mongoose.connect('mongodb+srv://charlesjmng:kixV0KCUEIX1NK3A@myenquirydb.bnhpw.mongodb.net/enquirydb?retryWrites=true&w=majority&appName=myEnquiryDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
