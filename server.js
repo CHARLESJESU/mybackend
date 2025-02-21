@@ -52,7 +52,7 @@ const enquirySchema = new mongoose.Schema({
   sourceOfInfo: [String]
 });
 
-const Enquiry = mongoose.model('Enquiry', enquirySchema);
+const Enquiry = mongoose.model('studentenquiry', enquirySchema);
 
 // API endpoint to handle form submission
 app.post('/api/enquiry', async (req, res) => {
